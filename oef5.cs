@@ -44,7 +44,7 @@ namespace ExtraOefening
             
 
             }else { //verzameling van persoon objecten in naamlijst met gebruik van textbox 
-                    naamLijst.Add(new Persoon(textBox1.Text, textBox2.Text, textBox3.Text));
+                    naamLijst.Add(new Persoon(textBox1.Text, textBox2.Text,Convert.ToInt32(textBox3.Text)));
                     int count = naamLijst.Count - 1;
                     //Cast 
                     listBox1.Items.Add(naamLijst[count]);
@@ -81,6 +81,11 @@ namespace ExtraOefening
             listBox1.Items.Remove(selected);
             
          
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

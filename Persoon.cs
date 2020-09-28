@@ -11,9 +11,9 @@ namespace ExtraOefening
     {
        public string Voornaam { get; set; }
         public string Achternaam { get; set; }
-        public string Leeftijd { get; set; }
+        public int Leeftijd { get; set; }
 
-        public Persoon(string voornaam, string achternaam, string leeftijd) {
+        public Persoon(string voornaam, string achternaam, int leeftijd) {
             Voornaam = voornaam;
             Achternaam = achternaam;
             Leeftijd = leeftijd;
